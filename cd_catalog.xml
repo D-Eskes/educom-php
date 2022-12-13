@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+- phpMyAdmin XML Dump
+- version 5.2.0
+- https://www.phpmyadmin.net
+-
+- Host: 127.0.0.1
+- Gegenereerd op: 13 dec 2022 om 11:25
+- Serverversie: 10.4.27-MariaDB
+- PHP-versie: 8.1.12
+-->
+
+<pma_xml_export version="1.0" xmlns:pma="https://www.phpmyadmin.net/some_doc_url/">
+    <!--
+    - Structure schemas
+    -->
+    <pma:structure_schemas>
+        <pma:database name="mydb" collation="utf8mb4_general_ci" charset="utf8mb4">
+            <pma:table name="musicdiscs">
+                CREATE TABLE `musicdiscs` (
+                  `id` int(6) unsigned NOT NULL AUTO_INCREMENT,
+                  `title` varchar(30) NOT NULL,
+                  `artist` varchar(30) NOT NULL,
+                  `country` varchar(30) NOT NULL,
+                  `company` varchar(30) NOT NULL,
+                  `price` float(6,2) NOT NULL,
+                  `year` int(11) NOT NULL,
+                  PRIMARY KEY (`id`)
+                ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+            </pma:table>
+        </pma:database>
+    </pma:structure_schemas>
+
+    <!--
+    - Database: 'mydb'
+    -->
+    <database name="mydb">
+        <!-- Tabel musicdiscs -->
+        <table name="musicdiscs">
+            <column name="id">1</column>
+            <column name="title">Empire Burlesque</column>
+            <column name="artist">Bob Dylan</column>
+            <column name="country">USA</column>
+            <column name="company">Columbia</column>
+            <column name="price">10.90</column>
+            <column name="year">1985</column>
+        </table>
+        <table name="musicdiscs">
+            <column name="id">2</column>
+            <column name="title">One night only</column>
+            <column name="artist">Bee Gees</column>
+            <column name="country">UK</column>
+            <column name="company">Polydor</column>
+            <column name="price">10.90</column>
+            <column name="year">1998</column>
+        </table>
+        <table name="musicdiscs">
+            <column name="id">3</column>
+            <column name="title">Thevery best of</column>
+            <column name="artist">Cat Stevens</column>
+            <column name="country">UK</column>
+            <column name="company">Island</column>
+            <column name="price">8.90</column>
+            <column name="year">1990</column>
+        </table>
+    </database>
+</pma_xml_export>
